@@ -5,4 +5,4 @@
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - checkout # check out the code in the project directory
-        - run: arn:aws:lambda:eu-west-2:672053357008:function:Anwesh
+        - run: echo This is Circle CI test
