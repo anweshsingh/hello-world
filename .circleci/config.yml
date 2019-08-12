@@ -6,3 +6,5 @@
       steps:
         - checkout # check out the code in the project directory
         - run: echo This is Circle CI test
+        - curl: https://sr5chcoful.execute-api.eu-west-2.amazonaws.com/default/AutomationPOC
+       
