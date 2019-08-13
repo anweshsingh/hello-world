@@ -1,10 +1,10 @@
 version: 2.1
 orbs:
-  newman: postman/newman@0.0.2
+  newman: postman/newman@1.0.0
 jobs:
   newman-collection-run:
     executor: newman/postman-newman-docker
     steps:
       - checkout
       - newman/newman-run:
-          collection: .//Users/assingh/Desktop/AutomationPOC.json
+          collection: ./Users/assingh/Desktop/AutomationPOC.json
