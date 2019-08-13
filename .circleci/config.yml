@@ -1,4 +1,4 @@
-  version: 2.1
+version: 2.1
 orbs:
   newman: postman/newman@0.0.2
 jobs:
@@ -7,4 +7,4 @@ jobs:
     steps:
       - checkout
       - newman/newman-run:
-          collection: ./collection.json
+          collection: .//Users/assingh/Desktop/AutomationPOC.json
