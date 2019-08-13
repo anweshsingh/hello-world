@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "ae912271-d89b-4225-ab68-a4bb1f186dc4",
+		"name": "AutomationPOC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " https://fqa0902zs9.execute-api.eu-west-2.amazonaws.com/Stage/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://fqa0902zs9.execute-api.eu-west-2.amazonaws.com/Stage/",
+					"protocol": "https",
+					"host": [
+						"fqa0902zs9",
+						"execute-api",
+						"eu-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Stage",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
