@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "d4a930f4-92b9-496d-a3e1-378d97fe5224",
+		"name": "Optic QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Optic-QA Cuctomer Profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "31cc0632-ad59-409a-bd42-3d07d047687d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "iI0o3RoVXV967RPVsGEw01nkJnpRaTri2Z24B6ea",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"identifiers\": {\n        \"tenantId\": \"61a12cd421bd41259cbf08da6d65ab9b\",\n        \"tenantCustomerId\": \"61a12cd421bd41259cbf08da6d65ab9b:9d7c899e10b3496db2f680543c70cc4c\"\n        \n    },\n    \"refreshTimestamp\": \"2019-06-17T10:20:55Z\",\n    \"relyingPartyCustomerId\": [\"esha\", \"anw\"]\n}\n"
+				},
+				"url": {
+					"raw": "https://o839hpmec1.execute-api.eu-west-2.amazonaws.com/qa/customer-profile/search-credentials",
+					"protocol": "https",
+					"host": [
+						"o839hpmec1",
+						"execute-api",
+						"eu-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"qa",
+						"customer-profile",
+						"search-credentials"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
