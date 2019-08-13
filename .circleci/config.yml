@@ -7,5 +7,4 @@ jobs:
     steps:
       - checkout
       - newman/newman-run:
-          collection: ../Users/assingh/Desktop/AutomationPOC.json
-          environment: ../Users/assingh/Desktop/AutomationPOC.json
+          collection: ../AutomationPOC.json
