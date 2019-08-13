@@ -7,4 +7,4 @@ jobs:
     steps:
       - checkout
       - newman/newman-run:
-          collection: ./Optic QA.CustProfile
+          collection: ./OpticQA.CustProfile.json
