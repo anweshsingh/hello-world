@@ -6,5 +6,5 @@ jobs:
     executor: newman/postman-newman-docker
     steps:
       - checkout
-      - newman/newman-run
+      - newman/newman-run:
           collection: ./OpticQA.CustProfile1.json
