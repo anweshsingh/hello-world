@@ -8,3 +8,4 @@ jobs:
       - checkout
       - newman/newman-run:
           collection: ./OpticQA.CustProfile.json
+          collection: ./OpticQA.CustProfile1.json
